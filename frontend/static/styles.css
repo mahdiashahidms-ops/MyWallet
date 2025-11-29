@@ -1,0 +1,85 @@
+     body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .container {
+            width: 400px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .required label:after {
+            content: " *";
+            color: red;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            max-width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: border 0.2s ease;
+            background: #fff;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input:focus, select:focus {
+            border-color: #4a90e2;
+        }
+
+        .non-required input {
+            background: #fafafa;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #4a90e2;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #3b78c2;
+        }
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+
+            input, select, button {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
