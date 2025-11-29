@@ -1,3 +1,6 @@
 ---- COMMAND  
-uvicorn main:app --reload
+Run it from backend
+uvicorn app.main:app --reload
 
+To run it from Source
+uvicorn backend.app.main:app --reload
